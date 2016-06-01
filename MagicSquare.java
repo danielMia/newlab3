@@ -1,4 +1,4 @@
-package lab3;
+
 
 /**
  * A class that will generate magic squares of
@@ -32,15 +32,15 @@ public class MagicSquare {
       if (row>n-1){
         row = row-n;
       }
-      if(row<0){
-        row = n + row;
-      }
+//      if(row<0){
+//        row = n + row;
+//      }
       if (col>n-1){
         col = col-n;
       }
-      if(col<0){
-        col = n + col;
-      }
+//      if(col<0){
+//        col = n + col;
+//      }
       array[row][col] = i+1;
     }
     
@@ -52,14 +52,14 @@ public class MagicSquare {
      * are separated by \t characters.
      */
     //***YOUR CODE HERE***
-	String result ="";
-	for (int i  = 0;i < array.length;i++){
-		for (int j = 0;j<array[i].length;j++){
-			result += " "+array[i][j];
-		}
-		result += "\n";
-		
-	}
+ String result ="";
+ for (int i  = 0;i < array.length;i++){
+  for (int j = 0;j<array[i].length;j++){
+   result += " "+array[i][j];
+  }
+  result += "\n";
+  
+ }
     
     return result; //DUMMY - REMOVE
   }//toString
